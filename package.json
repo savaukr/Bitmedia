@@ -1,0 +1,35 @@
+{
+  "name": "bitmedia",
+  "version": "1.0.0",
+  "description": "test task from bitmedia\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[B\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "server": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/savaukr/Bitmedia.git"
+  },
+  "keywords": [
+    "list",
+    "users",
+    "diagram"
+  ],
+  "author": "Pachevskiy Vjacheslav",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/savaukr/Bitmedia/issues"
+  },
+  "homepage": "https://github.com/savaukr/Bitmedia#readme",
+  "dependencies": {
+    "config": "^3.3.6",
+    "express": "^4.17.1",
+    "sequelize": "^6.5.0",
+    "sqlite3": "^5.0.2"
+  },
+  "devDependencies": {
+    "concurrently": "^6.0.0",
+    "nodemon": "^2.0.7"
+  }
+}

@@ -1,0 +1,12 @@
+//users 
+
+CREATE TABLE users (
+id INTEGER PRIMARY KEY AUTOINCREMENT,
+first_name VARCHAR(50),
+last_name  VARCHAR(50),
+email  VARCHAR(255),
+gender  VARCHAR(10),
+ip_address  VARCHAR(15));
+
+INSERT INTO users (first_name, last_name, email, gender, ip_address)
+ VALUES ('G', 'B', 's@ukr.net', 'Female', '57.14.195.231');
