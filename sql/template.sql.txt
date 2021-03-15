@@ -1,0 +1,20 @@
+CREATE TABLE users (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    first_name VARCHAR(50),
+    last_name VARCHAR(50),
+    email VARCHAR(255),
+    gender VARCHAR(10),
+    ip_address VARCHAR(15));
+
+CREATE TABLE users_statistic (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    date VARCHAR(10),
+    page_views INTEGER,
+    clicks INTEGER);
+
+# перевірка існування таблиці users
+SELECT COUNT(*) FROM sqlite_master WHERE type='table' AND name='users';
+
+#
+INSERT INTO users (first_name, last_name, email, gender, ip_address) 
+VALUES ('Jon', 'Cruger', 's@ukr.net', 'Famel', '0021.1213.344.55');
