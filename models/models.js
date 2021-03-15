@@ -9,7 +9,7 @@ const users =`CREATE TABLE users (
     ip_address VARCHAR(15));`
 
 const users_statistic = `CREATE TABLE users_statistic (
-    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    user_id INTEGER,
     date VARCHAR(10),
     page_views INTEGER,
     clicks INTEGER);
