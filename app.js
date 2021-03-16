@@ -11,16 +11,18 @@ function start() {
     try {
         serviceDB.migrateDB('users', 'users_statistic')
             .then((result)=>{
-                console.log('1)', result)
+                console.log('start try:', result)
+            })
+            .catch((err)=>{
+                console.log("Error in promise:", err.message)
+            })
+            .finally(()=> {
+                console.log('finally is working...')
                 serviceDB.db.close((err) => {
                     if (err) {
                         console.log(err.message)
                     } else console.log('DB connection is closed!!! ')
                 })
-            }).catch(()=>{
-                if (err) {
-                    console.log(err.message)
-                } else console.log('DB connection is closed ')
             })
     } catch(e) {
         console.log('Server Error', e.message)
