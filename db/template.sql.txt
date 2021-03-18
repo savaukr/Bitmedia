@@ -20,3 +20,6 @@ FROM users u LEFT JOIN users_statistic s ON s.user_id = u.id where s.user_id = $
 SELECT SUM(page_views) from users_statistic WHERE user_id = ${user_id};
 SELECT SUM(clicks) from users_statistic WHERE user_id = ${user_id};
 
+SELECT * FROM users_statistic 
+WHERE date BETWEEN ${from} AND ${to} AND user_id = ${id};
+
