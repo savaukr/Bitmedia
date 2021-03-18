@@ -10,3 +10,13 @@ ip_address  VARCHAR(15));
 
 INSERT INTO users (first_name, last_name, email, gender, ip_address)
  VALUES ('G', 'B', 's@ukr.net', 'Female', '57.14.195.231');
+
+SELECT u.id, u.first_name, u.last_name, u.email, u.gender, u.ip_address, s.page_views as page_views, s.clicks as clicks 
+FROM users u LEFT JOIN users_statistic s ON s.user_id = u.id;
+
+SELECT u.id, u.first_name, u.last_name, u.email, u.gender, u.ip_address, s.page_views as page_views, s.clicks as clicks 
+FROM users u LEFT JOIN users_statistic s ON s.user_id = u.id where s.user_id = ${user_id};
+
+SELECT SUM(page_views) from users_statistic WHERE user_id = ${user_id};
+SELECT SUM(clicks) from users_statistic WHERE user_id = ${user_id};
+
