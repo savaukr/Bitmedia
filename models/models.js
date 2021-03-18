@@ -1,6 +1,4 @@
-//const users = ["id", "first_name", "last_name", "email", "gender", "ip_address"]
-//const users_statistic = ["user_id", "date", "page_views", "clicks"]
-const users =`CREATE TABLE users (
+const users = `CREATE TABLE users (
     id INTEGER PRIMARY KEY AUTOINCREMENT,
     first_name VARCHAR(50),
     last_name VARCHAR(50),
@@ -10,13 +8,13 @@ const users =`CREATE TABLE users (
 
 const users_statistic = `CREATE TABLE users_statistic (
     user_id INTEGER,
-    date VARCHAR(10),
+    date DATE,
     page_views INTEGER,
-    clicks INTEGER);
-`
+    clicks INTEGER,
+    FOREIGN KEY (user_id) REFERENCES users(id));`
 
 const models = {
-    users,
-    users_statistic
-}
-module.exports = models
+  users,
+  users_statistic,
+};
+module.exports = models;
