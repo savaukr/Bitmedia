@@ -1,0 +1,22 @@
+.user_container {
+    section {
+        padding: 20px 50px;
+        font-size: 16px;
+        line-height: 20px;
+    }
+    a {
+        text-decoration: none;
+        width: 85px;
+        height: 20px;
+        color: #CCCCCC;
+    }
+    a:hover {
+        cursor:pointer;
+        color: #888888;
+        font-weight: 800;
+    }
+    span {
+        height: 20px;
+        color: #3A80BA;
+    }
+}

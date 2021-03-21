@@ -17,8 +17,9 @@ module.exports = class User {
 //   }
 
   static async getUsersOnPage(currentPage, countUsersOnPage) {
-    const from = currentPage * countUsersOnPage;
-    const to = currentPage * countUsersOnPage + countUsersOnPage + 1;
+
+    const from = (currentPage==1) ? 0 : (currentPage-1)* countUsersOnPage;
+    const to = currentPage * countUsersOnPage + 1;
     let sql = `SELECT * FROM users where id>${from} and id<${to}`;
     const users = await db.doEachSql(sql);
 

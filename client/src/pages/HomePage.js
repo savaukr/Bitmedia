@@ -3,7 +3,7 @@ import { Card } from '../components/Card/Card'
 import { FooterHome } from '../components/FooterHome/FooterHome'
 import { HeaderHome } from '../components/HeaderHome/HeaderHome'
 import icon from '../img/Vector.png'
-import './homePage.scss'
+import './HomePage.scss'
 
 export const HomePage = () => {
     return (

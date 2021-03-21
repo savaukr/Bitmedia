@@ -10,30 +10,33 @@ footer {
 
 }
 .footer__bottom {
+    width:100%;
     display: flex;
-    justify-content: space-around; 
+    justify-content: space-around;
     font-size: 16px;
     color: #FFFFFF;
     
 }
 .footer__input {
-    text-align:center;
     width: 579px;
     height: 64px;
     background: #FFFFFF;
     border: 1px solid #F1F1F1;
     box-sizing: border-box;
     border-radius: 10px;
-    display: flex;
-    input {
-        height: 100%;
-        flex-grow: 3;
-        padding-left: 3%;
-        outline:none;
-        border:none;
+    display: flex !important;
+    justify-content: space-between;
+    .footer__input_input {
+        height: 100%; 
+        //width:55%;
+        //flex-grow: 3 !important;
+        padding-left: 3% !important;
+        outline:none !important;
+        border:none !important;
     }
-    button {
-        flex-grow: 2;
+    .footer__input_button {
+        //flex-grow: 2 !important;
+        width:45% !important;
         height: 100%;
         background: #3A80BA;
         border-radius: 8px;
@@ -47,6 +50,8 @@ footer {
 
     }
 }
+
+
 @media (max-width: 768px) {
     .footer__input {
         width: 400px;
@@ -54,6 +59,7 @@ footer {
     .footer__bottom {
         flex-direction: column;
         div {
+            text-align: center;
             margin-bottom: 8px;
         }
     }

@@ -1,0 +1,15 @@
+th {
+    background-color: #3A80BA;
+    border-left: 1px solid white;
+    color: #FFFFFF;
+    text-align: center;
+}
+th:first-child {
+    border-radius: 8px 0 0 0;
+}
+th:last-child {
+    border-radius:  0 8px 0 0;
+}
+tr:nth-child(2n) {
+    background-color:#F1F1F1;;
+}

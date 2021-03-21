@@ -1,3 +1,5 @@
+@import "~materialize-css/dist/css/materialize.min.css";
+
 @font-face {
     font-family: 'Montserrat';
     font-style: normal;
@@ -11,7 +13,7 @@
 body {
     font-family: Montserrat;
 }
-.container {
+.app {
     max-width: 1440px;
     margin: 0 auto;
 }

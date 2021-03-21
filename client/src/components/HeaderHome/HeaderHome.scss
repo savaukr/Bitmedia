@@ -39,30 +39,38 @@ header {
         font-size: 20px;
         margin-top: 30px;
     }
-    button {
+    .button {
         background-color: $tc-l ;
         width: 154px;
         min-height: 56px;
         font-size: 16px;
         text-align: center;
-        color:$mainColor;
         outline: none;
         border: none;
         border-radius: 8px;
         cursor: pointer;
         margin-top: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        a {
+            text-decoration: none;
+            color:$mainColor;
+        }
         &:hover {
             background-color: $mainColor + #111111;
-            color:$tc-l;
-            font-size: 20px;
-            font-weight: 600;
+            a {
+                color:$tc-l; 
+                font-size: 18px;
+                font-weight: 400;
+            }
         }
     }
 }
 
 @media (max-width: 920px) {
     header {
-        button { 
+        .button { 
             margin-bottom: 100px;
         }
     }

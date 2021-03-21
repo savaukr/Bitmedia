@@ -11,7 +11,7 @@ export const HeaderHome = ()=> {
                     <div className="header__text">
                         Our design projects are fresh and simple and will benefit your business greatly. Learn more about our work!
                     </div>
-                    <button>Views Stats</button>
+                    <div className="button"><a href="/statistic">Views Stats</a></div>
                 </div>
             </div>
             < div className="header__container_right">

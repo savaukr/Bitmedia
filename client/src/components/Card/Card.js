@@ -5,7 +5,7 @@ export const Card = ({title, content, icon}) => {
     return (
         <div className="card">
             <div className="card__icon">
-                <a href="">
+                <a href="/">
                     <img src={icon} alt={title}/>
                 </a>
             </div>

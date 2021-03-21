@@ -1,7 +1,7 @@
 import React from 'react'
 import {Switch, Route, Redirect} from 'react-router-dom'
 import { HomePage } from './pages/HomePage'
-import { UserListPage } from './pages/UserListPage'
+import { UsersStatisticPage } from './pages/UsersStatisticPage'
 import { UserPage } from './pages/UserPage'
 
 export const useRoutes = () => {
@@ -10,10 +10,10 @@ export const useRoutes = () => {
             <Route path="/" exact>
                 <HomePage />
             </Route>
-            <Route path="/list" exact>
-                <UserListPage/>
+            <Route path="/statistic" exact>
+                <UsersStatisticPage/>
             </Route>
-            <Route path="/list/:id">
+            <Route path="/statistic/:id">
                 <UserPage/>
             </Route>
             <Route>
