@@ -1,0 +1,83 @@
+@import '../../css/mixin.scss';
+
+header {
+    display: flex;
+    justify-content: space-around;
+    width:100%;
+    min-height: 655px;
+    background: url('../../img/headerBackgr.jpg') no-repeat;
+    background-size: cover;
+    color: $tc-l;
+    .header__container_left {
+        width: 41%;
+        max-width: 592px;
+    }
+    .header__container_right {
+        -moz-text-align-last: 320px;
+        width: 22%;
+        max-width:320px;
+        height: 560px;
+        background: url('../../img/iPhoneX.png') no-repeat;
+        background-size: contain;
+        align-self: center;
+    }
+    .logo {
+        display: inline-block;
+        height: 49px;
+        margin-top: 24px;
+        font-size: 40px;
+        line-height: 49px;
+        text-decoration: none;
+        color: $tc-l;
+    }
+    .header__title {
+        margin-top: 57px;
+        font-size: 48px;
+        line-height: 59px;
+    }
+    .header__text {
+        font-size: 20px;
+        margin-top: 30px;
+    }
+    .button {
+        background-color: $tc-l ;
+        width: 154px;
+        min-height: 56px;
+        font-size: 16px;
+        text-align: center;
+        outline: none;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        margin-top: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        a {
+            text-decoration: none;
+            color:$mainColor;
+        }
+        &:hover {
+            background-color: $mainColor + #111111;
+            a {
+                color:$tc-l; 
+                font-size: 18px;
+                font-weight: 400;
+            }
+        }
+    }
+}
+
+@media (max-width: 920px) {
+    header {
+        .button { 
+            margin-bottom: 100px;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .header__container_right {
+        display:none;
+    }
+}
