@@ -10,11 +10,11 @@ module.exports = class User {
     this.ip_address = ip_address;
   }
 
-//   static async getUsersCount() {
-//     let sql = `SELECT COUNT(*) FROM users`;
-//     const count = await db.doEachSql(sql);
-//     return await count[0]["COUNT(*)"];
-//   }
+  static async getUsersCount() {
+    let sql = `SELECT COUNT(*) FROM users`;
+    const count = await db.doEachSql(sql);
+    return await count[0]["COUNT(*)"];
+  }
 
   static async getUsersOnPage(currentPage, countUsersOnPage) {
 

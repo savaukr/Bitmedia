@@ -10,6 +10,9 @@ th:first-child {
 th:last-child {
     border-radius:  0 8px 0 0;
 }
+tr {
+    cursor: pointer;
+}
 tr:nth-child(2n) {
     background-color:#F1F1F1;;
 }

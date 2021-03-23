@@ -1,0 +1,20 @@
+@import '../../css/mixin.scss';
+
+.pages {
+    margin: 40px 0;
+    .page, .currentPage {
+        margin:0 20px;
+        padding: 7px 12px;
+        border-radius: 3px;
+        cursor:pointer;
+        font-size: 16px;
+        line-height: 20px;
+        text-align: center;     
+        color: #1A1A1A;
+    }
+    .currentPage {
+        color: $tc-l;
+        background-color: $mainColor ;
+    }
+
+}

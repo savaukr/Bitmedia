@@ -4,6 +4,18 @@ const {check, validationResult} = require('express-validator/check')
 
 
 const router = Router()
+// /api/user/count
+router.post('/count',
+    async (req, res)=> {
+        try {          
+            const usersCount = await User.getUsersCount()
+            res.status(201).json(usersCount)
+        } catch(e) {
+            res.status(500).json({message: "Не вдалось отриматі кількість користувачів, спробуйте ще"})
+        }
+    }
+)
+
 // /api/user/
 router.post('/',
     [
