@@ -31,6 +31,9 @@ export const UsersList = () => {
         } catch(e) {}
     }, [request])
 
+    
+
+
     useEffect(()=>{
         getUsersCount()
     },[])
@@ -44,15 +47,17 @@ export const UsersList = () => {
         clearError()
     }, [error, message, clearError]) 
 
+    
+
+    const clickHandler = (event) => {
+        setCurrentPage(event.target.dataset.num)
+    }
+
     if (loading) return (
         <div className="usersList-container">
             <Loader />
         </div>
     )
-
-    const clickHandler = (event) => {
-        setCurrentPage(event.target.dataset.num)
-    }
 
     return (
         <div className="usersList-container">
